@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A preview gallery of plug-and-play developer portfolio UI components." />
+    <title>Star Winner · Portfolio Components</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="components/tech-grid/tech.css" />
+    <link rel="stylesheet" href="components/code-terminal/terminal.css" />
+    <link rel="stylesheet" href="components/project-timeline/timeline.css" />
+  </head>
+  <body>
+    <div class="dashboard-shell">
+      <aside class="sidebar">
+        <a class="brand" href="#top" aria-label="Star Winner home"><span class="brand-mark">✦</span><span>star<span>winner</span></span></a>
+        <nav aria-label="Component navigation">
+          <p class="nav-label">Component vault</p>
+          <a class="nav-link active" href="#top">Overview</a>
+          <a class="nav-link" href="#tech-grid">Tech grid</a>
+          <a class="nav-link" href="#terminal">Code terminal</a>
+          <a class="nav-link" href="#timeline">Project timeline</a>
+        </nav>
+        <div class="sidebar-bottom"><span class="status-dot"></span> Open-source components<br /><small>v1.0 · vanilla HTML/CSS/JS</small></div>
+      </aside>
+
+      <main id="top" class="content">
+        <header class="hero">
+          <div><p class="eyebrow">Developer portfolio toolkit</p><h1>Build a portfolio<br /><em>worth starring.</em></h1></div>
+          <a class="button button-primary" href="https://github.com/" target="_blank" rel="noreferrer">View on GitHub <span>↗</span></a>
+        </header>
+        <p class="intro">A small collection of polished, dependency-free components for developers who would rather ship work than design another portfolio from scratch.</p>
+
+        <section id="tech-grid" class="component-section">
+          <div class="section-heading"><div><p class="eyebrow">01 / Interactive</p><h2>Tech stack grid</h2></div><span class="file-tag">tech.html + tech.css + tech.js</span></div>
+          <div class="preview-card tech-grid-component">
+            <div class="tech-grid-header"><div><span class="component-kicker">My toolkit</span><h3>Things I build with.</h3></div><span class="tech-count">08 tools</span></div>
+            <div class="tech-filters" role="group" aria-label="Filter technologies"><button class="tech-filter is-active" data-filter="all">All</button><button class="tech-filter" data-filter="language">Languages</button><button class="tech-filter" data-filter="database">Databases</button><button class="tech-filter" data-filter="tool">Tools</button></div>
+            <div class="tech-cards">
+              <article class="tech-card" data-category="language"><span class="tech-icon python">Py</span><div><h4>Python</h4><p>Language</p></div></article>
+              <article class="tech-card" data-category="language"><span class="tech-icon javascript">JS</span><div><h4>JavaScript</h4><p>Language</p></div></article>
+              <article class="tech-card" data-category="language"><span class="tech-icon cpp">C++</span><div><h4>C++</h4><p>Language</p></div></article>
+              <article class="tech-card" data-category="database"><span class="tech-icon mysql">MY</span><div><h4>MySQL</h4><p>Database</p></div></article>
+              <article class="tech-card" data-category="database"><span class="tech-icon mongo">Mg</span><div><h4>MongoDB</h4><p>Database</p></div></article>
+              <article class="tech-card" data-category="tool"><span class="tech-icon git">Gt</span><div><h4>Git</h4><p>Tooling</p></div></article>
+              <article class="tech-card" data-category="tool"><span class="tech-icon figma">Fi</span><div><h4>Figma</h4><p>Tooling</p></div></article>
+              <article class="tech-card" data-category="tool"><span class="tech-icon docker">Dc</span><div><h4>Docker</h4><p>Tooling</p></div></article>
+            </div>
+          </div>
+        </section>
+
+        <section id="terminal" class="component-section">
+          <div class="section-heading"><div><p class="eyebrow">02 / Interactive</p><h2>Code terminal</h2></div><span class="file-tag">terminal.html + terminal.css + terminal.js</span></div>
+          <div class="preview-card terminal-component">
+            <div class="terminal-bar"><div class="window-dots"><i></i><i></i><i></i></div><span>portfolio@developer: ~</span><span class="terminal-live">● live</span></div>
+            <div id="terminal-log" class="terminal-log" aria-live="polite"><p><span class="terminal-muted">Last login: today from the internet</span></p><p>Welcome to my corner of the web. Type <strong>help</strong> to explore.</p></div>
+            <form id="terminal-form" class="terminal-input"><label for="terminal-command">visitor@portfolio:~$</label><input id="terminal-command" autocomplete="off" autofocus aria-label="Terminal command" /><button aria-label="Run command" type="submit">↵</button></form>
+          </div>
+        </section>
+
+        <section id="timeline" class="component-section">
+          <div class="section-heading"><div><p class="eyebrow">03 / Storytelling</p><h2>Project timeline</h2></div><span class="file-tag">timeline.html + timeline.css</span></div>
+          <div class="preview-card timeline-component"><ol class="timeline-list"><li><div class="timeline-date">2025 · NOW</div><div class="timeline-dot"></div><div class="timeline-entry"><span class="entry-label">Currently shipping</span><h3>Building for the open web</h3><p>Creating small, useful experiences where performance and personality meet.</p></div></li><li><div class="timeline-date">2024</div><div class="timeline-dot"></div><div class="timeline-entry"><span class="entry-label">Product launch</span><h3>Released first developer tool</h3><p>Took an idea from a sketch to a tool used by fellow developers.</p></div></li><li><div class="timeline-date">2023</div><div class="timeline-dot"></div><div class="timeline-entry"><span class="entry-label">The beginning</span><h3>Started writing code daily</h3><p>Learned by making things, breaking them, then making them better.</p></div></li></ol></div>
+        </section>
+        <footer>Made for your next portfolio · <a href="README.md">Read the docs</a></footer>
+      </main>
+    </div>
+    <script src="components/tech-grid/tech.js"></script><script src="components/code-terminal/terminal.js"></script>
+  </body>
+</html>
